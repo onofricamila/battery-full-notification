@@ -10,7 +10,8 @@ notify_something () {
 while true
 do
     export DISPLAY=:0.0
-    battery_percent=$(acpi -b | grep -P -o '[0-9]+(?=%)')
+    battery_percent_list=$(acpi -b | grep -P -o '[0-9]+(?=%)')
+    battery_percent=$(echo $battery_percent_list | cut -d" " -f1)
     if on_ac_power; then
         if [ "$battery_percent" ">" "80" ]; then
 		notify_something "Laptop battery is almost fully charged. Unplug charger"
