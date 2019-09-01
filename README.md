@@ -1,4 +1,4 @@
-# Battery Full Notification
+# Plug/unplug laptop charger notification
 A simple script to display a notification when your battery is almost full and when it needs to be charged according to some experts recommendation to mantain its level in the range of ~30/80%. It works in Ubuntu.
 
 ![preview](http://i.imgur.com/rVGMBK8.png)
