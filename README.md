@@ -11,7 +11,7 @@ A simple script to display a notification when your battery is full in Ubuntu/Li
 
 2. Clone this repo :
         
-        git clone https://github.com/hg8/battery-full-notification.git
+        git clone https://github.com/onofricamila/battery-full-notification.git
         
 3. Add the `batteryfull.sh` script as a startup application (Open Dash and search for `Startup Applications`) :
 
