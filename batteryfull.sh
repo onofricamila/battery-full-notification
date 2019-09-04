@@ -13,10 +13,10 @@ do
     battery_percent_list=$(acpi -b | grep -P -o '[0-9]+(?=%)')
     battery_percent=$(echo $battery_percent_list | cut -d" " -f1)
     if on_ac_power; then
-        if [ "$battery_percent" ">" "80" ]; then
+        if [ $battery_percent -gt 80 ]; then
 		notify_something "Laptop battery is almost fully charged. Unplug charger." $battery_percent
         fi
-    elif [ "$battery_percent" "<" "35" ]; then
+    elif [ $battery_percent -lt 35 ]; then
 	    notify_something "Plug laptop charger. Battery level under 35%." $battery_percent
     fi
     sleep 300 # (5 minutes)
