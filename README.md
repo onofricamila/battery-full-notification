@@ -16,8 +16,8 @@ A simple script to display a notification when your battery is almost full and w
 3. Add the `batteryfull.sh` script as a startup application (Open Dash and search for `Startup Applications`) and complete fields as follows:
 
     * Name: Plug/unplug laptop charger notification
-    * Command: full path to batteryfull.sh
-    * Simple script to make it easy to keep your laptop battery between 30% n 80%
+    * Command: `full path to batteryfull.sh`
+    * Description: Simple script to make it easy to keep your laptop battery between 30% n 80%
 
 4. Done!
 
