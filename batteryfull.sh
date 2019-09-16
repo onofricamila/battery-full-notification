@@ -2,7 +2,7 @@
 
 # requires one arg representing the message to show and the battery level
 notify_something () {
-	notify-send -i "$PWD/batteryfull.png" "$1" "Level: $2%"
+	notify-send -t 0 -i "$PWD/batteryfull.png" "$1" "Level: $2%"
 	paplay /usr/share/sounds/ubuntu/stereo/message.ogg
 }
 
